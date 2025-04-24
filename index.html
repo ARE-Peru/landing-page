@@ -2121,7 +2121,9 @@
                     <div class="custom-form" id="header-form" style="background-color: #1c2533; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto;">
                       <h3 style="color: white; text-align: center;">PIDE UNA ASESORÍA GRATUITA</h3>
                     
-                      <form target="_blank" action="https://formsubmit.co/7299fa811bb196c4433e543697ee0468" method="POST" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+                      <!-- modify this form HTML and place wherever you want your form -->
+
+                      <form action="https://formspree.io/f/mqaqkwrg" method="POST" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
                     
                         <!-- Fila 1: Nombre y Apellido -->
                         <div style="display: flex; flex-direction: column;">
@@ -2151,6 +2153,7 @@
                           </div>
                     
                           <div style="flex: 1; min-width: 45%;">
+
                             <label style="color: white; margin-bottom: 5px;">Número de teléfono</label>
                             <input type="tel" name="telefono" placeholder="Número" required
                               style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; width: 100%;">
@@ -2181,6 +2184,9 @@
                           <input type="checkbox" name="acepto_comunicaciones" id="acepto_comunicaciones" style="width: 18px; height: 18px;">
                           <label for="acepto_comunicaciones" style="font-size: 14px; color: #bbb;">Acepto recibir otras comunicaciones</label>
                         </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.areperu.com/gracias.html">
                     
                         <!-- Fila 6: Botón de enviar -->
                         <div>
